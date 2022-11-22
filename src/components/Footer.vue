@@ -4,7 +4,7 @@
       Created with ♥
       <a
         class="footer_link"
-        href="https://github.com/evgeniy-savenko/custom-lib"
+        href="https://github.com/evgeniy-savenko/rick-and-morty-vue"
         >Link on GitHub</a
       >
     </div>
