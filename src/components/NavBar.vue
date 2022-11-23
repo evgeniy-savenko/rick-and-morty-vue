@@ -1,12 +1,15 @@
 <template>
   <nav>
-    <ram-button @click="$router.push('/')">Home</ram-button>
-    <img
-      class="bg-img"
-      src="https://upload.wikimedia.org/wikipedia/ru/c/c8/Rick_and_Morty_logo.png"
-      alt=""
-    />
-    <ram-button @click="$router.push('/characters')">Episodes</ram-button>
+    <ram-button @click="$router.push('/characters')">Characters</ram-button>
+    <router-link class="logo" :to="{name: 'home'}">
+      <img
+        class="bg-img"
+        src="https://upload.wikimedia.org/wikipedia/ru/c/c8/Rick_and_Morty_logo.png"
+        alt=""
+      />
+    </router-link>
+
+    <ram-button @click="$router.push('/locations')">Locations</ram-button>
   </nav>
 </template>
 
@@ -19,7 +22,7 @@ export default {
 <style scoped>
 .bg-img {
   width: 10%;
-  height: 10%;
+  height: 100%;
 }
 
 nav {
