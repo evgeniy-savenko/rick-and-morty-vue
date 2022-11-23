@@ -7,6 +7,8 @@ import CardItem from '@/components/CardItem';
 import Pagination from '@/components/Pagination';
 import SortSelect from '@/components/SortSelect';
 import SearchCard from '@/components/SearchCard';
+import Location from '@/components/LocationItem';
+import PaginationLocation from '@/components/PaginationLocation';
 
 export default [
   ButtonItem,
@@ -18,4 +20,6 @@ export default [
   Pagination,
   SortSelect,
   SearchCard,
+  Location,
+  PaginationLocation,
 ];

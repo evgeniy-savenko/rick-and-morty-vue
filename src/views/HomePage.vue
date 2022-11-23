@@ -4,12 +4,18 @@
       <img
         class="bg-img"
         src="https://upload.wikimedia.org/wikipedia/ru/c/c8/Rick_and_Morty_logo.png"
-        alt=""
+        alt="logo"
       />
       <div class="btn-link">
-        <ram-button @click="$router.push('/characters')">Characters</ram-button>
-        <ram-button>Location</ram-button>
-        <ram-button>Episodes (soon)</ram-button>
+        <ram-button @click="$router.push('/characters')">
+          Characters
+        </ram-button>
+        <ram-button @click="$router.push('/locations')"
+          >Location (soon)
+        </ram-button>
+        <ram-button>
+          <a href="https://rickandmortyapi.com/">About API</a>
+        </ram-button>
       </div>
     </div>
   </div>
@@ -34,6 +40,13 @@ export default {
   height: 100vh;
 }
 
+a {
+  color: #7dc21e;
+}
+
+a:hover {
+  color: white;
+}
 .bg {
   display: flex;
   flex-wrap: wrap;
