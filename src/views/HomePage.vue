@@ -10,9 +10,7 @@
         <ram-button @click="$router.push('/characters')">
           Characters
         </ram-button>
-        <ram-button @click="$router.push('/locations')"
-          >Location (soon)
-        </ram-button>
+        <ram-button @click="$router.push('/locations')">Location </ram-button>
         <ram-button>
           <a href="https://rickandmortyapi.com/">About API</a>
         </ram-button>
