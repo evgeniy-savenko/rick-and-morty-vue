@@ -10,6 +10,7 @@
         class="location-item"
       >
         <div class="location-description">
+          Name: <br />
           <b> {{ location.name }} </b>
         </div>
 
@@ -19,7 +20,7 @@
             'no-type': location.dimension === '',
           }"
         >
-          <b>{{ location.dimension }}</b>
+          Dimension: <br /><b>{{ location.dimension }}</b>
         </div>
         <div
           class="location-description"
@@ -27,7 +28,7 @@
             'no-type': location.type === '',
           }"
         >
-          <b>{{ location.type }}</b>
+          Type: <br /><b>{{ location.type }}</b>
         </div>
       </div>
     </transition-group>
@@ -68,10 +69,10 @@ export default {
 }
 .location-item {
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 12px;
-  border: 3px solid rgba(31, 223, 31);
+  border: 1px solid rgb(132, 133, 132);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -94,6 +95,7 @@ export default {
 
 .no-type {
   background-color: red;
+  display: none;
 }
 
 .location-list-item {
