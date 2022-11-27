@@ -21,6 +21,7 @@ export const characterPage = {
     isLoading: false,
     error: null,
     url: 'character',
+    favCard: null,
 
     totalPages: null,
   }),

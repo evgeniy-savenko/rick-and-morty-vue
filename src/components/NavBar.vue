@@ -21,8 +21,8 @@ export default {
 
 <style scoped>
 .bg-img {
-  width: 10%;
-  height: 100%;
+  width: 80px;
+  height: 50px;
 }
 
 nav {
