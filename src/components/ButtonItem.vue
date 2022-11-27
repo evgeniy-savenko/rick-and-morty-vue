@@ -26,7 +26,7 @@ button.outline {
   border-style: solid;
   border-width: 2px;
   border-radius: 22px;
-  padding: 10px 40px;
+  padding: 10px 20px;
   text-transform: uppercase;
   transition: all 0.2s linear;
 }

@@ -11,7 +11,7 @@
         <img :src="card.image" class="card-image" />
         <div class="card-description">
           <div
-            class="card-description__origin"
+            class="card-description__status"
             :class="{
               'status-alive': card.status === 'Alive',
               'status-unknown': card.status === 'unknown',
@@ -24,14 +24,12 @@
             <b>{{ card.name }}</b>
           </div>
           <div class="card-description__gender">
-            {{ card.gender }}
+            <b>{{ card.gender }}</b>
+          </div>
+          <div class="card-description__btn">
+            <button @click="$emit('click', card)">Favorite</button>
           </div>
         </div>
-        <!-- <div class="card-favourite">
-        <div class="card-favourite__button">
-          <button>Добавить в избранное</button>
-        </div>
-      </div> -->
       </div>
     </transition-group>
   </div>
@@ -61,6 +59,17 @@ export default {
 </script>
 
 <style scoped>
+button {
+  background-color: #446911;
+  border: 1px solid rgb(50, 173, 26);
+  color: white;
+  padding: 3px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
 .card-list-item {
   display: inline-block;
   margin-right: 10px;
@@ -111,8 +120,25 @@ export default {
 .card-item:hover {
   box-shadow: 0px 0px 15px 5px #7dc21e;
   transition: 0.5s all;
+  position: relative;
+  height: 450px;
+  width: 280px;
+  border-radius: 12px;
+  border: 3px solid rgba(31, 223, 31);
+  display: flex;
+  flex-direction: column;
+  background-color: #446911;
 }
-.card-description__origin {
+
+.card-description__btn {
+  display: none;
+  color: yellow;
+}
+.card-item:hover .card-description__btn {
+  display: block;
+  transition: 0.5s all;
+}
+.card-description__status {
   border-radius: 0 0 5px 5px;
 }
 .card-image {
